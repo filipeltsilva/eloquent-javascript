@@ -1,29 +1,29 @@
-# Values, Types and Operatos
+# Valores, Tipos e Operadores
 
-There are six basic value types on JavaScript: number, string, boolean, object, function and undefined.
+Existem seis tipos básicos de valores em JavaScript: números, strings, booleanos, objetos, funções e undefined.
 
-## Number
+## Números
 
-They are positive or negative numerical values, with or without decimal places; for very big or very small numbers, you can use scientific notation (e, for exponent - 2.998e8).
+Eles são positivos ou negativos, com ou sem casas decimais; para números muito grandes ou muito pequenos, pode-se usar notações científicas (e, para sinalizar o expoente - 2.998e8).
 
-Numbers are also used for storing arithmetic expressions.
+Tipos numéricos também são usados para armazenar expressões aritméticas.
 
-There are three special values that JavaScript considers numbers, but they doesn't look like them:
+Existem três valores especiais que o JavaScript considera como números, mas esses valores não se parecem com eles:
 
-* Infinity: the positive infinity. For register, Infinity - 1 is still Infinity;
-* -Infinity: the negative infinity;
-* NaN: Not a Number. You can get this result in expressions divided by zero or expressions where you can't get an accurate number for an answer.
+* Infinity: a representação positiva para infinito. Para registro, Infinity - 1 ainda é igual a Infinity;
+* -Infinity: a representação negativa para infinito;
+* NaN: Not a Number. Obtém-se esse resultado em expressões divididas por zero ou em expressões onde não é possível obter um número preciso como resposta.
 
-## String
-
-
-## Boolean
+## Strings
 
 
-## Object
+## Booleanos
 
 
-## Function
+## Objetos
+
+
+## Funções
 
 
 ## Undefined
