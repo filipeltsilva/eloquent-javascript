@@ -16,6 +16,11 @@ Existem três valores especiais que o JavaScript considera como números, mas es
 
 ## Strings
 
+Representam textos e seus conteúdos são delimitados entre aspas, tanto simples quanto duplas. O importante é que as aspas do início e do fim da string sejam iguais.
+
+Nem tudo pode ser normalmente interpretado dentro das aspas. Alguns caracteres especiais devem ser precedidos de uma barra invertida ('\') para que ocorra sua correta interpretação. Por exemplo, um 'n' após a barra invertida produz uma nova linha no console do JavaScript. Aspas após a barra invertida fará com que estas sejam impressas no console.
+
+### Operadores Unários
 
 ## Booleanos
 
