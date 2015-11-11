@@ -20,6 +20,9 @@ Representam textos e seus conteúdos são delimitados entre aspas, tanto simples
 
 Nem tudo pode ser normalmente interpretado dentro das aspas. Alguns caracteres especiais devem ser precedidos de uma barra invertida ('\') para que ocorra sua correta interpretação. Por exemplo, um 'n' após a barra invertida produz uma nova linha no console do JavaScript. Aspas após a barra invertida fará com que estas sejam impressas no console.
 
+Strings não são subtraídas, multiplicadas ou divididas, mas podem ser concatenadas umas às outras através do operador '+'.
+    'con' + 'cat' + 'en' + 'ação'
+
 ### Operadores Unários
 
 ## Booleanos
