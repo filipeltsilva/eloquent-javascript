@@ -12,7 +12,7 @@ Existem três valores especiais que o JavaScript considera como números, mas es
 
 * Infinity: a representação positiva para infinito. Para registro, Infinity - 1 ainda é igual a Infinity;
 * -Infinity: a representação negativa para infinito;
-* NaN: Not a Number. Obtém-se esse resultado em expressões divididas por zero ou em expressões onde não é possível obter um número preciso como resposta.
+* NaN: Not a Number. Obtém-se esse resultado em expressões divididas por zero ou em expressões onde não é possível obter um número preciso como resposta. NaN nunca será igual a si mesmo.
 
 ## Strings
 
@@ -26,13 +26,23 @@ Strings não são subtraídas, multiplicadas ou divididas, mas podem ser concate
 
 ### Operadores Unários
 
+Os operadores unários operam sobre um único valor.
+
+Operadores também podem ser palavras escritas, como o caso do operador typeof, que é usado com a finalidade de avaliar um valor e retornar o seu tipo.
+
+    console.log(typeof 1987); // number
+    console.log(typeof 'Cachorro'); // string
+
 ## Booleanos
 
+Os tipos booleanos possuem apenas os valores true e false e são obtidos, dentre outras formas, através de expressões lógicas.
 
-## Objetos
+    console.log(10 > 9); // true
+    console.log(2 < 1); // false
+    console.log('Barack' < 'Obama'); // true
 
+### Operadores Lógicos
 
-## Funções
-
+JavaScript suporta 3 operadores lógicos: os operadores binários e(&&) e ou(||) e o operador unário não(!).
 
 ## Undefined

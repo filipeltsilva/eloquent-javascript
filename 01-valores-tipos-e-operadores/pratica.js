@@ -5,3 +5,7 @@ console.log('Uma nova linha é gerada com o caracter especial \'\\n\'.');
 
 /* CONCATENAÇÃO DE STRINGS */
 console.log('con' + 'cat' + 'en' + 'ação');
+
+/* OPERADORES UNÁRIOS */
+console.log(typeof 27);
+console.log(typeof 'Filipe');
