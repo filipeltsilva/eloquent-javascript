@@ -46,3 +46,15 @@ Os tipos booleanos possuem apenas os valores true e false e são obtidos, dentre
 JavaScript suporta 3 operadores lógicos: os operadores binários e(&&) e ou(||) e o operador unário não(!).
 
 ## Undefined
+
+O JavaScript usa os valores null e undefined para representar a ausência de valores significativos. Eles são considerados valores, mas não levam informação.
+
+A diferença de significado entre undefined e null é considerada um "erro" no projeto da linguagem JavaScript.
+
+### Conversão Automática de Tipo
+
+Quando um operador é aplicado a um tipo de valor "errado", ele vai converter este valor para o tipo que quiser, levando em consideração um conjunto de regras pré-estabelecidas de acordo com o operador usado.
+
+    console.log("2" - 1); // 1
+    console.log("2" + 2); // 22
+

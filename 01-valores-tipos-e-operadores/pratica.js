@@ -9,3 +9,7 @@ console.log('con' + 'cat' + 'en' + 'ação');
 /* OPERADORES UNÁRIOS */
 console.log(typeof 27);
 console.log(typeof 'Filipe');
+
+/* CONVERSÃO AUTOMÁTICA DE TIPOS */
+console.log('2' - 1);
+console.log('2' + 2);
