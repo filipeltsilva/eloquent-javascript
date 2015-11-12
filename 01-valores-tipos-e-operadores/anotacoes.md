@@ -58,3 +58,6 @@ Quando um operador é aplicado a um tipo de valor "errado", ele vai converter es
     console.log("2" - 1); // 1
     console.log("2" + 2); // 22
 
+Se algo não pode ser mapeado como um número ao ser convertido para este tipo de valor, o valor será NaN. Operações aritméticas com NaN produzirão como resultado NaN.
+
+Em algumas situações, além de comparar o valor de uma variável, é necessário comparar o seu tipo. Para isso o JavaScript utiliza dos operadores '===' e '!==' para igualdade e diferença de valores, respectivamente.
