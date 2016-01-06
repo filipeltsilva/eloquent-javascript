@@ -58,6 +58,5 @@ function countChar(string, char) {
 function countBs(string) {
     return countChar(string, "B");
 }
-
 console.log(countBs("BBC"));
 console.log(countChar("kakkerlak", "k"));
