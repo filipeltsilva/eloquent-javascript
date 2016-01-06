@@ -1,6 +1,15 @@
 // The previous chapter introduced the standard function Math.min that re- turns its smallest argument.
 // We can do that ourselves now. Write a function min that takes two arguments and returns their minimum.
+function min(arg1, arg2) {
+    var minimun;
 
+    if (arg1 < arg2)
+        return arg1;
+    else
+        return arg2;
+}
+console.log(min(0, 10));
+console.log(min(-10, 0));
 
 // We’ve seen that % (the remainder operator) can be used to test whether a number is even or odd by using
 // % 2 to check whether it’s divisible by two. Here’s another way to define whether a positive whole number
@@ -11,7 +20,19 @@
 // Define a recursive function isEven corresponding to this description. The function should accept a number
 // parameter and return a Boolean.
 // Test it on 50 and 75. See how it behaves on -1. Why? Can you think of a way to fix this?
-
+function isEven(num) {
+    if (num === 0)
+        return true;
+    else if (num == 1)
+        return false;
+    else if (num < 0)
+        return isEven(-num);
+    else
+        return isEven(num - 2);
+}
+console.log(isEven(50));
+console.log(isEven(75));
+console.log(isEven(-1));
 
 // You can get the Nth character, or letter, from a string by writing "string". charAt(N), similar to how
 // you get its length with "s".length. The returned value will be a string containing only one character
@@ -23,3 +44,20 @@
 // Next, write a function called countChar that behaves like countBs, except it takes a second argument that
 // indicates the character that is to be counted (rather than counting only uppercase “B” characters).
 // Rewrite countBs to make use of this new function.
+function countChar(string, char) {
+    var counter = 0;
+
+    for (var i = 0; i < string.length; i++) {
+        if (string.charAt(i) == char)
+            counter += 1;
+    }
+
+    return counter;
+}
+
+function countBs(string) {
+    return countChar(string, "B");
+}
+
+console.log(countBs("BBC"));
+console.log(countChar("kakkerlak", "k"));
