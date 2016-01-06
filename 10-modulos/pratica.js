@@ -3,7 +3,6 @@ var names = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', '
 function dayName(number) {
     return names[number];
 }
-
 console.log(dayName(1));
 
 // NO MÓDULO ACIMA, A FUNÇÃO DAYNAME FAZ PARTE DA INTERFACE, MAS A VARIÁVEL NAMES NÃO.
@@ -16,5 +15,4 @@ var dayName = function() {
         return names[number];
     };
 }();
-
 console.log(dayName(3));
