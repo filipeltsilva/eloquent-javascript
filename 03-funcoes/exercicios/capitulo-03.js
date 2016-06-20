@@ -1,12 +1,12 @@
 // The previous chapter introduced the standard function Math.min that re- turns its smallest argument.
 // We can do that ourselves now. Write a function min that takes two arguments and returns their minimum.
 function min(arg1, arg2) {
-    var minimun;
+  var minimun;
 
-    if (arg1 < arg2)
-        return arg1;
-    else
-        return arg2;
+  if (arg1 < arg2)
+    return arg1;
+  else
+    return arg2;
 }
 console.log(min(0, 10));
 console.log(min(-10, 0));
@@ -21,14 +21,14 @@ console.log(min(-10, 0));
 // parameter and return a Boolean.
 // Test it on 50 and 75. See how it behaves on -1. Why? Can you think of a way to fix this?
 function isEven(num) {
-    if (num === 0)
-        return true;
-    else if (num == 1)
-        return false;
-    else if (num < 0)
-        return isEven(-num);
-    else
-        return isEven(num - 2);
+  if (num === 0)
+    return true;
+  else if (num == 1)
+    return false;
+  else if (num < 0)
+    return isEven(-num);
+  else
+    return isEven(num - 2);
 }
 console.log(isEven(50));
 console.log(isEven(75));
@@ -45,18 +45,18 @@ console.log(isEven(-1));
 // indicates the character that is to be counted (rather than counting only uppercase “B” characters).
 // Rewrite countBs to make use of this new function.
 function countChar(string, char) {
-    var counter = 0;
+  var counter = 0;
 
-    for (var i = 0; i < string.length; i++) {
-        if (string.charAt(i) == char)
-            counter += 1;
-    }
+  for (var i = 0; i < string.length; i++) {
+    if (string.charAt(i) == char)
+      counter += 1;
+  }
 
-    return counter;
+  return counter;
 }
 
 function countBs(string) {
-    return countChar(string, "B");
+  return countChar(string, "B");
 }
 console.log(countBs("BBC"));
 console.log(countChar("kakkerlak", "k"));
